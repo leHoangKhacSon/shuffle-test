@@ -1,1 +1,1 @@
-const shuffle = require('./index');
+const xdn02TestShuffle = require('./index');
