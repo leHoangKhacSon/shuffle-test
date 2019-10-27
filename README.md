@@ -14,4 +14,4 @@ In Node.js:
 
 *// Load the full build.*
 
-const xdn02TestShuffle = require('xdn02-test-shuffle');
+`const xdn02TestShuffle = require('xdn02-test-shuffle');`
