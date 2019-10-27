@@ -10,7 +10,9 @@ describe('shuffle', function() {
   // input: array has at least one element
   // output: array has been shuffle
   it('app should return array', function() {
-    expect(shuffle([1, 2])).to.eql([1, 2] || [2, 1]);
+    const actual = [[1, 2], [2, 1]];
+    const index = actual.indexOf(shuffle([1, 2]))
+    expect(index).to.not.eql('-1');
   });
   // input: empty array
   // output: empty array 
