@@ -5,7 +5,7 @@ describe('shuffle', function() {
   // input: not input
   // output: error message 'The parameter must be an array'
   it('app should return error message', function() {
-    expect(shuffle()).to.eql('The parameter must be an array');
+    expect(() => shuffle()).to.throw(('The parameter must be an array'));
   });
   // input: array has at least one element
   // output: array has been shuffle
@@ -20,6 +20,6 @@ describe('shuffle', function() {
   // input: not array
   // output: error message 'The parameter must be an array'
   it('app should return error message', function() {
-    expect(shuffle('abc')).to.eql('The parameter must be an array');
+    expect(() => shuffle('abc')).to.throw('The parameter must be an array');
   });
 })

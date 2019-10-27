@@ -1,9 +1,9 @@
 module.exports = function(arr) {
-  
+  if(!Array.isArray(arr)) {
+    throw new Error('The parameter must be an array');
+  }
   try {
-    if(!Array.isArray(arr)) {
-      throw 'The parameter must be an array';
-    }
+    
     const arrCopy = [...arr];
     const shuffleArr = [];
     while(arrCopy.length > 0) {
